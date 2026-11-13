@@ -72,6 +72,30 @@
             opacity: 0.9;
         }
 
+        .top-blue-banner {
+            background: linear-gradient(90deg, #1E40AF 0%, #1D4ED8 50%, #2563EB 100%);
+            color: #ffffff;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 2px solid #93C5FD;
+        }
+
+        .top-blue-banner-text {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 14px;
+            font-weight: 700;
+            color: #EFF6FF;
+            background: rgba(255, 255, 255, 0.16);
+            padding: 8px 14px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            word-break: break-all;
+            user-select: all;
+        }
+
         .content {
             padding: 32px 28px;
         }
@@ -151,6 +175,39 @@
             font-weight: bold;
         }
 
+        /* Styling for the AdMob app-ads.txt verification box */
+        .ads-txt-box {
+            margin-left: 44px;
+            margin-top: 14px;
+            background: #EFF6FF;
+            border: 1px dashed #93C5FD;
+            border-radius: 10px;
+            padding: 14px 16px;
+        }
+
+        .ads-txt-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--primary-dark);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ads-txt-code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 13.5px;
+            color: #1E3A8A;
+            background: #FFFFFF;
+            padding: 10px 12px;
+            border-radius: 6px;
+            border: 1px solid #DBEAFE;
+            word-break: break-all;
+            user-select: all;
+        }
+
         .contact-card {
             background: #F0FDF4;
             border: 1px solid #BBF7D0;
@@ -194,6 +251,9 @@
             body {
                 padding: 12px 8px;
             }
+            .top-blue-banner {
+                padding: 12px 16px;
+            }
             .content {
                 padding: 20px 16px;
             }
@@ -203,7 +263,7 @@
             header h1 {
                 font-size: 22px;
             }
-            .section p, .section ul {
+            .section p, .section ul, .ads-txt-box {
                 margin-left: 0;
             }
             .section-header {
@@ -215,6 +275,13 @@
 <body>
 
 <div class="container">
+    <!-- Top Blue AdMob Verification Bar -->
+    <div class="top-blue-banner">
+        <div class="top-blue-banner-text" id="topAdsTxtRecord">
+            google.com, pub-5899208639069583, DIRECT, f08c47fec0942fa0
+        </div>
+    </div>
+
     <header>
         <div class="app-badge">Official Legal Document</div>
         <h1>Privacy Policy</h1>
@@ -260,7 +327,7 @@
         <div class="section">
             <div class="section-header">
                 <div class="section-number">3</div>
-                <div class="section-title">Google AdMob Advertising Policy</div>
+                <div class="section-title">Google AdMob Advertising Policy & Seller Verification</div>
             </div>
             <p style="margin-bottom: 10px;">To keep core study resources free for students, the app serves advertisements powered by Google AdMob:</p>
             <ul>
@@ -268,6 +335,16 @@
                 <li><strong>Non-Personalized Device Identifiers:</strong> Google AdMob may utilize standard mobile advertising identifiers (Google Advertising ID) and anonymized device telemetry to deliver and measure ads in accordance with Google Play Developer Policies.</li>
                 <li><strong>Ad-Free Experience for VIP Members:</strong> Users with an active VIP Premium subscription enjoy a completely ad-free learning experience across all app screens.</li>
             </ul>
+
+            <!-- Authorized Digital Sellers (app-ads.txt) Record -->
+            <div class="ads-txt-box">
+                <div class="ads-txt-label">
+                    <span>Authorized Digital Sellers (app-ads.txt) Verification Record</span>
+                </div>
+                <div class="ads-txt-code">
+                    <span id="adsTxtRecord">google.com, pub-5899208639069583, DIRECT, f08c47fec0942fa0</span>
+                </div>
+            </div>
         </div>
 
         <!-- Section 4 -->
@@ -321,6 +398,7 @@
     <footer>
         <p>© 2026 Gujarati Vyakaran Guru. All rights reserved.</p>
         <p style="margin-top: 4px;">Designed and Developed with ❤️ in Gujarat, India.</p>
+        <p style="margin-top: 8px; font-family: monospace; font-size: 11.5px; color: #6B7280;">google.com, pub-5899208639069583, DIRECT, f08c47fec0942fa0</p>
     </footer>
 </div>
 
